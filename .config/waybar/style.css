@@ -1,0 +1,90 @@
+@import "./themes/mocha.css";
+
+* {
+    font-family: CaskaydiaCove Nerd Font;
+    font-size: 10px;
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+window#waybar {
+    background-color: rgba(30,30,46,0.9);
+    color: @text;
+}
+
+#workspaces button {
+    margin-right: 0.5rem;
+    color: @text;
+}
+
+#workspaces button:hover {
+    border-bottom: 2px solid @sky;
+    color: @sky;
+}
+
+#workspaces button.active {
+    border-bottom: 2px solid @blue;
+    color: @blue;
+}
+
+#clock {
+    padding: 0 1rem;
+}
+
+#battery, #backlight, #pulseaudio, #custom-pacman, #custom-docker, #tray {
+    padding: 0 1rem;
+    margin-right: 0.5rem;
+}
+
+#battery {
+    border-bottom: 2px solid @flamingo;
+    color: @flamingo;
+}
+
+#battery.warning {
+    border-bottom: 2px solid @peach;
+    color: @peach;
+}
+
+#battery.critical {
+    border-bottom: 2px solid @red;
+    color: @red;
+}
+
+#backlight {
+    border-bottom: 2px solid @yellow;
+    color: @yellow;
+}
+
+#pulseaudio {
+    border-bottom: 2px solid @teal;
+    color: @teal;
+}
+
+#custom-pacman {
+    border-bottom: 2px solid @mauve;
+    color: @mauve;
+}
+
+#custom-docker {
+    border-bottom: 2px solid @sapphire;
+    color: @sapphire;
+}
+
+#tray {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+#tray menu {
+    background-color: @base;
+    color: @text;
+}
+
+#custom-power {
+    padding: 0 1rem;
+    border-bottom: 2px solid @red;
+    color: @red;
+}

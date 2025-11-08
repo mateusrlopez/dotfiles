@@ -1,0 +1,18 @@
+alias vim='nvim'
+
+alias la='ls -a'
+alias ll='ls -la'
+
+alias ..='cd ..'
+alias .4='cd ../..'
+alias .6='cd ../../..'
+alias .8='cd ../../../..'
+
+alias pacsyu='sudo pacman -Syu'
+alias pacsyyu='sudo pacman -Syyu'
+alias yaysua='yay -Sua'
+alias yaysyu='yay -Syu'
+alias pacunlock='sudo rm /var/lib/pacman/db.lck'
+alias pacorphan='sudo pacman -Rns $(pacman -Qtdq)'
+
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'

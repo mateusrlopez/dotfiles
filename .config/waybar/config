@@ -1,0 +1,61 @@
+{
+    "layer": "top",
+    "position": "top",
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["battery", "backlight", "pulseaudio", "custom/pacman", "custom/docker", "tray", "custom/power"],
+    "hyprland/workspaces": {
+    	"disable-scroll": true,
+       	"sort-by-number": true,
+		"format": "{name}"
+    },
+    "clock": {
+        "timezone": "America/Sao_Paulo",
+        "format": "{:%a %d %b %I:%M %p}"
+    },
+    "battery": {
+        "states": {
+            "warning": 30,
+	    	"critical": 10
+        },
+     	"format": "{icon} {capacity}%",
+		"format-charging": "󰂄 {capacity}%",
+		"format-warning": "󰂃 {capacity}%",
+        "format-critical": "󰂃 {capacity}%",
+	    "format-icons": ["󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+    "backlight": {
+    	"device": "intel_backlight",
+        "tooltip": false,
+		"format": "{icon} {percent}%",
+	    "format-icons": ["󰃚", "󰃛", "󰃜", "󰃝", "󰃞", "󰃟", "󰃠"],
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "󰝟",
+        "format-icons": ["󰕿", "󰖀", "󰕾"],
+    },
+    "custom/pacman": {
+        "format": "󰏓 {}",
+        "tooltip-format": "{} packages to be updated in Pacman",
+        "interval": 3600,
+        "exec": "checkupdates | wc -l",
+        "signal": 8
+    },
+    "custom/docker": {
+        "format": "󰡨 {}",
+        "tooltip-format": "{} containers running in Docker",
+        "interval": 3600,
+        "exec": "docker ps -q | wc -l",
+        "signal": 9
+    },
+    "tray": {
+	    "icon-size": 11,
+	    "spacing": 8
+    },
+    "custom/power": {
+        "format": "󰐥",
+        "tooltip": false,
+        "on-click": "powermenu"
+    }
+}

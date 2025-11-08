@@ -1,0 +1,29 @@
+width=300
+height=150
+border-radius=4
+margin=8
+padding=8
+text-alignment=center
+
+anchor=top-right
+layer=overlay
+
+sort=-time
+default-timeout=5000
+
+max-visible=5
+history=1
+max-history=5
+
+font=CaskaydiaCove Nerd Font 11
+icons=1
+icon-location=left
+max-icon-size=64
+
+background-color=#1e1e2e
+text-color=#cdd6f4
+border-color=#89b4fa
+progress-color=over #313244
+
+[urgency=high]
+border-color=#fab387

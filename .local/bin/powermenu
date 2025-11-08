@@ -1,0 +1,20 @@
+#!/usr/bin/env sh
+
+OPTIONS="Lock Screen\nRestart\nShutdown"
+CHOICE=$(echo -e "$OPTIONS" | tofi)
+
+case "$CHOICE" in
+    "Lock Screen")
+        hyprlock
+        ;;
+    "Restart")
+        systemctl reboot
+        ;;
+    "Shutdown")
+        systemctl poweroff
+        ;;
+    *)
+        exit 0
+        ;;
+esac
+
