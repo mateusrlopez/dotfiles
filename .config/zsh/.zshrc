@@ -13,7 +13,7 @@ setopt share_history        # share history between terminals
 fpath=($ASDF_DATA_DIR/completions $fpath)
 
 autoload -Uz compinit
-compinit
+compinit -d "$HOME/.cache/zsh/zcompdump"
 
 source $HOME/.config/zsh/plugins/catppuccin_mocha-zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
