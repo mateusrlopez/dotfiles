@@ -27,6 +27,7 @@ return {
                 'cssls',
                 'vue_ls',
                 'dockerls',
+                'biome',
             },
         },
         dependencies = {
@@ -44,6 +45,7 @@ return {
                 'golangci-lint',
                 'goimports',
                 'rubocop',
+                'biome',
             },
         },
         dependencies = {

@@ -23,13 +23,6 @@ lazy.setup  {
     ui = {
         rounded = true,
     },
-    checker = {
-        enabled = true,
-        notify = false,
-    },
-    change_detection = {
-        notify = false,
-    },
 }
 
 vim.keymap.set ('n', '<leader>lh', lazy.home, { desc = 'Open Lazy.nvim menu' })

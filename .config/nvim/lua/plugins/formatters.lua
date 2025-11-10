@@ -4,11 +4,12 @@ return {
     opts = {
         formatters_by_ft = {
             lua = { 'stylua' },
-            javascript = { 'prettier' },
-            typescript = { 'prettier' },
-            javascriptreact = { 'prettier' },
-            typescriptreact = { 'prettier' },
-            vue = { 'prettier' },
+            javascript = { 'prettier', 'biome' },
+            typescript = { 'prettier', 'biome' },
+            javascriptreact = { 'prettier', 'biome' },
+            typescriptreact = { 'prettier', 'biome' },
+            json = { 'biome' },
+            vue = { 'prettier', 'biome' },
             go = { 'goimports' },
             ruby = { 'rubocop' },
         },

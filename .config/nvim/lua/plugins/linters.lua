@@ -5,12 +5,13 @@ return {
         local lint = require  'lint'
 
         lint.linters_by_ft = {
-            javascript = { 'eslint_d' },
-            typescript = { 'eslint_d' },
-            javascriptreact = { 'eslint_d' },
-            typescriptreact = { 'eslint_d' },
-            vue = { 'eslint_d' },
-            go = { 'golangcilint' },
+            javascript = { 'eslint_d', 'biomejs' },
+            typescript = { 'eslint_d', 'biomejs' },
+            javascriptreact = { 'eslint_d', 'biomejs' },
+            typescriptreact = { 'eslint_d', 'biomejs' },
+            json = { 'biomejs' },
+            vue = { 'eslint_d', 'biomejs' },
+            go = { 'golangci-lint' },
             ruby = { 'rubocop' },
         }
 
