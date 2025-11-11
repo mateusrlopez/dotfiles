@@ -56,6 +56,6 @@
     "custom/power": {
         "format": "󰐥",
         "tooltip": false,
-        "on-click": "powermenu"
+        "on-click": "powermenu-tofi"
     }
 }
