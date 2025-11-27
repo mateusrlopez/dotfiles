@@ -4,14 +4,13 @@ return {
     opts = {
         formatters_by_ft = {
             lua = { 'stylua' },
-            javascript = { 'prettier', 'biome' },
-            typescript = { 'prettier', 'biome' },
-            javascriptreact = { 'prettier', 'biome' },
-            typescriptreact = { 'prettier', 'biome' },
+            javascript = { 'biome' },
+            typescript = { 'biome' },
+            javascriptreact = { 'biome' },
+            typescriptreact = { 'biome' },
+            vue = { 'biome' },
             json = { 'biome' },
-            vue = { 'prettier', 'biome' },
             go = { 'goimports' },
-            ruby = { 'rubocop' },
         },
         format_on_save = {
             lsp_fallback = true,

@@ -18,7 +18,7 @@ local lazy = require  'lazy'
 
 lazy.setup  {
     spec = {
-        { import = 'plugins' },
+        { import = 'mateus.plugins' },
     },
     ui = {
         rounded = true,

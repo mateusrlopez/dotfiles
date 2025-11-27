@@ -5,14 +5,13 @@ return {
         local lint = require  'lint'
 
         lint.linters_by_ft = {
-            javascript = { 'eslint_d', 'biomejs' },
-            typescript = { 'eslint_d', 'biomejs' },
-            javascriptreact = { 'eslint_d', 'biomejs' },
-            typescriptreact = { 'eslint_d', 'biomejs' },
+            javascript = { 'biomejs' },
+            typescript = { 'biomejs' },
+            javascriptreact = { 'biomejs' },
+            typescriptreact = { 'biomejs' },
+            vue = { 'biomejs' },
             json = { 'biomejs' },
-            vue = { 'eslint_d', 'biomejs' },
             go = { 'golangci-lint' },
-            ruby = { 'rubocop' },
         }
 
         local lint_augroup = vim.api.nvim_create_augroup ('lint', { clear = true })

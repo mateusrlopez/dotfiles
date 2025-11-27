@@ -17,17 +17,16 @@ return {
             ensure_installed = {
                 'lua_ls',
                 'ts_ls',
-                'eslint',
-                'emmet_language_server',
+                'vue_ls',
+                'emmet_ls',
                 'tailwindcss',
                 'gopls',
-                'ruby_lsp',
                 'yamlls',
                 'html',
                 'cssls',
-                'vue_ls',
                 'dockerls',
                 'biome',
+                'jsonls',
             },
         },
         dependencies = {
@@ -39,13 +38,9 @@ return {
         'WhoIsSethDaniel/mason-tool-installer.nvim',
         opts = {
             ensure_installed = {
-                'prettier',
-                'eslint_d',
                 'stylua',
                 'golangci-lint',
                 'goimports',
-                'rubocop',
-                'biome',
             },
         },
         dependencies = {
